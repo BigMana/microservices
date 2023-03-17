@@ -22,32 +22,35 @@ if (!empty($id)) {
 <!doctype html>
 <html lang="en">
 <head>
-<?php include 'inc/head.php'?>;
+<?php include 'inc/head.php';?>
 </head>
 <body>
 <header>
-<?php include 'inc/header.php'?>;
+<?php include 'inc/header.php';?>
 </header>
 
 
-	<main class="container">
-		<div class="row justify-content-center">
-			<article class="col-md-6 p-2">
-				<div class=" text-center">
+<main class="container">
+	<div class="row justify-content-center">
+		<article class="col-md-6 p-2">
+			<div class=" text-center">
 
-				<?= isset($data['Image']) ? '<img src="uploads/images/' . $data['Image'] . '" alt="Lorem" class="img-fluid">' : NULL ?>
-					
-				</div>
-				<?= isset($data['Titre']) ? '<h1>' . $data['Titre'] . '</h1>' : NULL ?>
-				<?= isset($data['Contenu']) ? '<p>' . $data['Contenu'] . '</p>' : NULL ?>
-				<?= isset($data['Prix']) ? '<p class="fs-1">Prix: ' . $data['Prix'] . '</p>' : NULL ?>
-				<div>
-					<a class="btn btn-primary" href="index.php">Retour</a>
-				</div>
-			</article>
-		</div>
-	</main>
+			<?= isset($data['Image']) ? '<img src="uploads/images/' . $data['Image'] . '" alt="Lorem" class="img-fluid">' : NULL ?>
+				
+			</div>
+			<?= isset($data['Titre']) ? '<h1>' . $data['Titre'] . '</h1>' : NULL ?>
+			<?= isset($data['Contenu']) ? '<p>' . $data['Contenu'] . '</p>' : NULL ?>
+			<?= isset($data['Prix']) ? '<p class="fs-1">Prix: ' . $data['Prix'] . '</p>' : NULL ?>
+			<div>
+				<a class="btn btn-primary" href="index.php">Retour</a>
+			</div>
+		</article>
+	</div>
+</main>
 
+<footer>
+<?php include 'inc/footer.php';?>
+</footer>
 </body>
 
 </html>
